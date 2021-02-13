@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <meta name="description" content="apenas um bot para te ajudar com sua expericia no discord">
+    <meta name="keywords" content="Discord Bot, Nyohi, Criminals, anime bot, Nyohi bot">
+    <meta name="author" content="THEBE$T ☠️#3906">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000aff">
+
+    <meta property="og:url" content="https://Nyohi-site.gamerjf982.repl.co">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nyohi | Discord Bot">
+    <meta property="og:description" content="Um bot multifuncional - girando em torno de Nyohi. Oferece consulta de anime, agendador de anime, sistema de moderação e muito mais!">
+    <meta property="og:image" content="https://Nyohi-site.gamerjf982.repl.co/src/images/avatar.png"
+    <meta property="og:site_name" content="Nyohi">
+
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:domain" content="https://Nyohi-site.gamerjf982.repl.co">
+    <meta property="twitter:url" content="https://Nyohi-site.gamerjf982.repl.co">
+    <meta name="twitter:title" content="Nyohi | Discord Bot">
+    <meta name="twitter:description" content="Um bot multifuncional - girando em torno de Nyohi. Oferece consulta de anime, agendador de anime, sistema de moderação e muito mais!">
+    <meta name="twitter:image" content="https://Nyohi-site.gamerjf982.repl.co/src/images/avatar.png">
+
+    <link rel="icon" type="image/png" href="./src/images/avatar.png" />
+
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <script src="./src/js/jquery-3.5.1.js"></script>
+    <script src="./src/js/navigators.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/main.js"></script>
+
+    <title>Nyohi Commands | Discord Bot </title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav-bar">
+        <div class="nav-bar-img">
+          <img src="./src/images/avatar.png" alt="">
+          <h1>Nyohi</h1>
+        </div>
+        <div class="nav-bar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="nav-bar-links">
+          <ul>
+          <li><a href="https://Nyohi-site.gamerjf982.repl.co">HOME</a></li>
+          <li><a href="#">COMMANDS</a></li>
+          <li><a href="">BOTS</a></li>
+          <li><a href="https://discord.com/oauth2/authorize?client_id=782641177408045070&permissions=1342696567&redirect_uri=https%3A%2F%2Fdiscord.gg%2FHD8EDFm&scope=bot">INVITE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content-commands">
+        <div class="content-commands-container">
+          <div class="content-commands-column-1">
+            <h1>Prefix</h1>
+            <p>
+             O prefixo padrão de Nyohi começa com <code class="code-inline">/</code>
+              <br><br>
+              Os comandos são marcados com base nas permissões necessárias para sua execução.
+              Comandos marcados como <span class="code-style-inline-red">Not for DM</span> não pode ser usado em mensagens diretas.
+              Comandos marcados como <span class="code-style-inline-red">Admin</span> requer as permissões de administrador do Discord.
+              Comandos marcados com <span class="code-style-inline-red" style="background-color: purple">purple</span> tags requer a respectiva permissão que destaca.
+              Comandos marcados como <span class="code-style-inline-red" style="background-color: green">Everyone</span> não requer permissões.
+              <br><br>
+              Certos comandos também precisam ser configurados antes de serem utilizáveis.
+              Comandos marcados como <span class="code-style-inline-red">NSFW</span> requer que o canal em que o comando foi usado seja do tipo nsfw.
+            </p>
+          </div><div class="content-commands-column-2">
+            <div class="content-commands-column-2-left">
+              <h1>Category</h1>
+              <div class="content-commands-expand">
+                <p> Expand / Hide all</p>
+                <div class="switch">
+                  <input type="checkbox" class="checkbox-expand">
+                  <span class="slider"></span>
+                </div>
+              </div>
+              <ul class="qa-menu-list">
+                <li data-li="action" class="col-2-btn active">Ação</li>              
+                <li data-li="animais" class="col-2-btn">Animais</li>
+                <li data-li="anime" class="col-2-btn">Anime</li>
+                <li data-li="bot" class="col-2-btn">Bot</li>
+                <li data-li="fun" class="col-2-btn">Fun</li>
+                <li data-li="moderation" class="col-2-btn">Moderation</li>
+                <li data-li="utility" class="col-2-btn">Utility</li>
+                <li data-li="musica" class="col-2-btn">Musica</li>
+                <li data-li="core" class="col-2-btn">Outros</li>
+              </ul>
+            </div>
+            <div class="content-commands-column-2-right">
+              <div class="commands-search">
+                <input class="search-box" type="text" name="command" required="true" formnovalidate>
+                <label for="search" class="search-label">
+                  <span class="content-search"> Search </span>
+                </label>
+              </div>
+              <div class="commands" id="commands-list">
+                <div class="commands-still-loading"></div>
+                <div class="commands-loading-failed">
+                  <h1>Error: Unable to Load Commands</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-information">
+          <h1>Nyohi</h1>
+          <p>
+            Este site é feito por THEBE$T ☠#3906
+          </p>
+        </div>
+        <div class="footer-links">
+          <ul>
+              <li><a href="#">Back to Top</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">BOTS</a></li>
+              <li><a href="https://discord.com/oauth2/authorize?client_id=782641177408045070&permissions=1342696567&redirect_uri=https%3A%2F%2Fdiscord.gg%2FHD8EDFm&scope=bot" target="_blank">Invite</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="main-button-link" href="" target="_blank">
+      <div class="invite-link">
+      <img src="./src/images/avatar.png" alt="Adicione Nyohi ao seu servidor">
+      <div class="overlay">
+        <div class="invite-text">
+          Invite!
+        </div>
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
